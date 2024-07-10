@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>General Certificate Generator</title>
+</head>
+<body>
+    <form id="certificateForm">
+        <label for="logo">Logo:</label>
+        <input type="file" id="logo" accept="image/*" required>
+        <br>
+        <label for="companyName">Company/Organization Name:</label>
+        <input type="text" id="companyName" required>
+        <br>
+        <label for="recipientName">Recipient Name:</label>
+        <input type="text" id="recipientName" required>
+        <br>
+        <label for="eventName">Event Name:</label>
+        <input type="text" id="eventName" required>
+        <br>
+        <label for="date">Date:</label>
+        <input type="date" id="date" required>
+        <br>
+        <label for="message">Custom Message:</label>
+        <textarea id="message" rows="4" required></textarea>
+        <br>
+        <button type="submit">Generate Certificate</button>
+    </form>
+
+    <div id="certificateOutput" class="hidden">
+        <div id="certificateContent"></div>
+        <button id="downloadBtn" class="hidden">Download as JPG</button>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
