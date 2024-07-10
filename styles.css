@@ -1,3 +1,5 @@
+/* styles.css */
+
 body {
     font-family: Arial, sans-serif;
     margin: 20px;
@@ -20,6 +22,7 @@ label {
 
 input[type="text"],
 input[type="date"],
+input[type="number"],
 textarea {
     width: calc(100% - 22px);
     padding: 10px;
@@ -59,15 +62,20 @@ button[type="submit"]:hover {
     display: none;
 }
 
-#certificateContent img {
+.certificate-content {
+    position: relative;
+    padding: 20px;
+}
+
+.certificate-content img.logo {
     max-width: 100px;
     margin-bottom: 20px;
 }
 
-#certificateContent h2,
-#certificateContent h1,
-#certificateContent h3,
-#certificateContent p {
+.certificate-content h2,
+.certificate-content h1,
+.certificate-content h3,
+.certificate-content p {
     margin: 10px 0;
 }
 

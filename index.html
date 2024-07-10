@@ -11,6 +11,9 @@
         <label for="logo">Logo:</label>
         <input type="file" id="logo" accept="image/*" required>
         <br>
+        <label for="background">Background Image:</label>
+        <input type="file" id="background" accept="image/*" required>
+        <br>
         <label for="companyName">Company/Organization Name:</label>
         <input type="text" id="companyName" required>
         <br>
@@ -26,11 +29,14 @@
         <label for="message">Custom Message:</label>
         <textarea id="message" rows="4" required></textarea>
         <br>
+        <label for="margin">Margin (px):</label>
+        <input type="number" id="margin" value="20" required>
+        <br>
         <button type="submit">Generate Certificate</button>
     </form>
 
     <div id="certificateOutput" class="hidden">
-        <div id="certificateContent"></div>
+        <div id="certificateContent" class="certificate-content"></div>
         <button id="downloadBtn" class="hidden">Download as JPG</button>
     </div>
 
@@ -38,4 +44,3 @@
     <script src="script.js"></script>
 </body>
 </html>
-
