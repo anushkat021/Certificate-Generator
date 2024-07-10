@@ -4,9 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="styles.css">
-    <title>General Certificate Generator</title>
+    <title>Certificate Generator</title>
 </head>
 <body>
+    <div id="intro">
+        <h1>Welcome to the General Certificate Generator</h1>
+        <p>
+            Use this tool to create customized certificates for any event or purpose. 
+            Simply fill out the form below with the required information, 
+            and upload your logo and background image. You can also specify the margins for the certificate border.
+            Once you have entered all the details, click on "Generate Certificate" to see a preview, 
+            and then download your certificate as a JPG file.
+        </p>
+    </div>
     <form id="certificateForm">
         <label for="logo">Logo:</label>
         <input type="file" id="logo" accept="image/*" required>
@@ -39,6 +49,14 @@
         <div id="certificateContent" class="certificate-content"></div>
         <button id="downloadBtn" class="hidden">Download as JPG</button>
     </div>
+
+    <div id="contact">
+        <h2>Contact Information</h2>
+        <p>Project made by: Anushka Tiwari</p>
+        <p>Email: <a href="mailto:anushkat021@gmail.com">anushkat021@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/anushkat021/" target="_blank">https://www.linkedin.com/in/anushkat021/</a></p>
+    </div>
+    
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
     <script src="script.js"></script>

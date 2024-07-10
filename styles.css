@@ -2,6 +2,7 @@
 
 body {
     font-family: Arial, sans-serif;
+    background-image: linear-gradient(to bottom right,skyblue, rgb(233, 233, 157));
     margin: 20px;
 }
 
@@ -58,6 +59,26 @@ button[type="submit"]:hover {
     text-align: center;
 }
 
+#intro {
+    max-width: 800px;
+    margin: 0 auto 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+#intro h1 {
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+#intro p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
 .hidden {
     display: none;
 }
@@ -92,3 +113,35 @@ button[type="submit"]:hover {
 #downloadBtn:hover {
     background-color: #218838;
 }
+
+/* contacts */
+
+#contact {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+#contact h2 {
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+#contact p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+#contact a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
